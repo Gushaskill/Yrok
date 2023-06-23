@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dopyrok.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Заголовок 1 уровня </h1>
+    <h2>    заг 2 уров </h2>
+    <h3>заг 3 уров</h3>
+    <h4>заг 4 уров</h4>
+    <h5>заг 5 уров</h5>
+    <h6>заг 6 уров</h6>
+    <p class="para-1">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        A accusantium amet animi aperiam commodi dolores ea enim error
+        esse impedit, ipsa, laborum magnam omnis perferendis quibusdam,
+        rerum sapiente sequi unde?
+    </p>
+     <p class="para-2">
+
+        <b>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        A accusantium amet animi aperiam commodi dolores ea enim error
+        esse impedit, ipsa, laborum magnam omnis perferendis quibusdam,
+        rerum sapiente sequi unde?</b>
+     </p>
+    <p class="para-3">
+        <i>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        A accusantium amet animi aperiam commodi dolores ea enim error
+        esse impedit, ipsa, laborum magnam omnis perferendis quibusdam,
+        rerum sapiente sequi unde?
+    </i>
+    </p>
+
+    <p class="para-4">Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        A accusantium amet animi aperiam commodi dolores ea enim error
+        esse impedit, ipsa, laborum magnam omnis perferendis quibusdam,
+        rerum sapiente sequi unde?
+    </p>
+<ul>
+    <li>Первый пункт</li>
+    <li>Второй пункт</li>
+    <li>  3 punkt</li>
+
+</ul>
+
+    <ol>
+        <li>Первый пункт</li>
+        <li>Второй пункт</li>
+        <li>  3 punkt</li>
+    </ol>
+
+    
+</body>
+
+
+</html>
+
+#CSS 
+h1 {
+    background: red
+}
+
+.para-1 {
+   background: pink;
+   font-size: 32pt;
+   color: green:
+}
+
+.para-2 {
+   border: 10px solid yellow;
+   border-radius: 5px
+   font-size: 24pt;
+   margin-bottom: 80px
+}
+
+.para-3{
+    font-weight: bold;
+    font-size: 22pt;
+    font-family: Courier New;
+}
+.para-4{
+    font-size: 24px;
+    font-style: italic;
+
+
+box-shadow: inset  0px -7px 2px 0px green
+}
