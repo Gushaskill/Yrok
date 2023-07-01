@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+ </head>
+
+<body>
+<a href="page2.html" target="_blank"> Сылка на page2</a>
+<form action="">
+    <label class="lead" for="field1"> Простое тескстовое поле </label>
+    <input class="form-control form-control-lg" id="field1" type="text">
+
+    <label class="lead" for="field2"> Чекс-бокс</label>
+    <input  class="form-check-input" id="field2" type="checkbox">
+
+    <label class="lead" for="field3">Введите пароль</label>
+    <input class="form-control form-control-sm" id="field3"  type="password">
+
+    <input  class="form-check-input" type="radio">
+
+    <input class="form-range" type="range">
+
+    <input class="btn btn-info" type="button" value="Отправить форму">
+</form>
+<form>
+   <p><b>Введите ваш отзыв:</b></p>
+   <p><textarea name="comment"></textarea></p>
+   <p><input type="submit"></p>
+</body>
