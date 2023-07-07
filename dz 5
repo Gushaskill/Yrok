@@ -1,0 +1,47 @@
+from django.contrib import admin
+from django.urls import path, include  #   path создает ссылку и говорит какой обработ довать ответ
+# include - подключает другой машрутизатор (urls.py
+from app_lesson_4.views import  index
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',  include('app_lesson_4.urls')),  # ГЛАВНАЯ СТРАНИЦА   #  MAIN 
+]
+################################## SETTING     
+                                             Application definition
+#  указываю свои приложния
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'add_advertisements',
+    'app_lesson_4'
+
+]
+ ############################# VIEMS
+from django.shortcuts import render
+
+
+from django.http import HttpResponse
+# место для обрабочиков(они получ запрос и форм ответ)
+
+
+def index(request):
+    return HttpResponse("«Домашка по 4 занятию»")
+
+########################################################  URL
+                                            
+from django.urls import path  # создает ссылку и говорит какой обработ довать ответ
+                                            
+from app_lesson_4.views import index
+
+urlpatterns = [
+
+    path('', index)  # ГЛАВНАЯ СТРАНИЦА
+]
+
+
+                                            
+                                           
