@@ -1,0 +1,11 @@
+from django.apps import AppConfig
+
+
+class AppAdvertisementsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'app_advertisements'
+    verbose_name = "Обьявления"
+    default_app_config = 'App_Advertisements.apps.AppAdvertisementsConfig'
+
+
+{% if adv.image %} {{adv.image.url}} {% endif %}
