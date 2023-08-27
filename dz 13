@@ -1,0 +1,30 @@
+def login_viem(request):
+    redirect_url = reverse('profile')
+    if request.method =="GET":
+        if request.user.is_authenticated:
+            return redirect(redirect_url)
+        else:
+            return render(request,'app_auth/login.html')
+    username = request.POST['username']
+    password = request.POST ['password']
+    user = authenticate(request,username=username,password=password)
+    if user is not None:
+        login(request,user)
+        return redirect(redirect_url)
+    return render(request,'app_auth/login.html',{"error": "Пользавотель не найден"})
+
+
+{{ form.non_field.errors }}
+    <form method="post">
+      {% csrf_token %}
+      {% for field in form %}
+      <div class="row mb-3">
+        <div class="col">
+          <label class="col-sm-4 col-form-label offset-4">{{ field.label }}</label>
+          <div class="col-sm-4 offset-4 w-25">
+            {{ field }}
+            {% if field.errors %}
+            <div class="form-label bg-warning" style="margin : 10px 0px;">
+              {{ field.errors }}
+            </div>
+            {% endif %}
